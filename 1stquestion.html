@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CST Faculty Profile | IIEST Shibpur</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="header-container">
+
+        <div class="institute-logo">
+            <div class="logo-circle">IIEST</div>
+
+            <div>
+                <h1>IIEST Shibpur</h1>
+                <p>Indian Institute of Engineering Science and Technology</p>
+            </div>
+        </div>
+
+        <button id="themeToggle" class="theme-btn">
+            🌙 Dark Mode
+        </button>
+
+    </div>
+</header>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="active">Home</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#about">About Department</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+
+        <span class="department-tag">
+            Department of Computer Science & Technology
+        </span>
+
+        <h2>
+            Faculty Information
+            <span>Profile</span>
+        </h2>
+
+        <p>
+            Explore academic information, qualifications, teaching
+            subjects and research areas of CST faculty members.
+        </p>
+
+    </div>
+</section>
+
+<main id="faculty" class="main-container">
+
+    <section class="search-section">
+
+        <h2>Find a Faculty Member</h2>
+
+        <p>
+            Search or select a faculty member to view their complete profile.
+        </p>
+
+        <div class="search-box">
+
+            <div class="input-wrapper">
+                <span class="search-icon">🔍</span>
+
+                <input
+                    type="text"
+                    id="facultySearch"
+                    placeholder="Search faculty by name..."
+                    autocomplete="off"
+                >
+            </div>
+
+            <select id="facultySelect">
+                <option value="">Select Faculty Member</option>
+            </select>
+
+        </div>
+
+        <div id="searchResults" class="search-results"></div>
+
+    </section>
+
+    <section id="profileSection" class="profile-section hidden">
+
+        <div class="profile-card">
+
+            <div class="profile-top">
+
+                <div class="photo-container">
+                    <img
+                        id="facultyPhoto"
+                        src=""
+                        alt="Faculty Photograph"
+                        class="faculty-photo"
+                    >
+                </div>
+
+                <div class="basic-info">
+
+                    <div class="faculty-label">
+                        FACULTY PROFILE
+                    </div>
+
+                    <h1 id="facultyName"></h1>
+
+                    <h3 id="facultyDesignation"></h3>
+
+                    <p class="department-name">
+                        Department of Computer Science & Technology
+                    </p>
+
+                    <div class="email-box">
+                        <span>✉</span>
+                        <a id="facultyEmail" href="#"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile-details">
+
+                <div class="detail-card">
+
+                    <div class="detail-icon">🎓</div>
+
+                    <div>
+                        <h3>Highest Qualification</h3>
+                        <p id="facultyQualification"></p>
+                    </div>
+
+                </div>
+
+                <div class="detail-card">
+
+                    <div class="detail-icon">📚</div>
+
+                    <div>
+                        <h3>Subjects Teaching in Current Semester</h3>
+                        <ul id="facultySubjects"></ul>
+                    </div>
+
+                </div>
+
+                <div class="detail-card research-card">
+
+                    <div class="detail-icon">🔬</div>
+
+                    <div>
+                        <h3>Research Areas</h3>
+                        <div id="facultyResearch" class="research-tags"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="emptyState" class="empty-state">
+
+        <div class="empty-icon">👨‍🏫</div>
+
+        <h2>Select a Faculty Member</h2>
+
+        <p>
+            Choose a name from the dropdown or search for a faculty member
+            to display their profile.
+        </p>
+
+    </section>
+
+    <section id="about" class="about-section">
+
+        <div class="about-content">
+
+            <span class="section-label">
+                ABOUT THE DEPARTMENT
+            </span>
+
+            <h2>
+                Department of Computer Science & Technology
+            </h2>
+
+            <p>
+                The Department of Computer Science and Technology at IIEST
+                Shibpur is engaged in teaching, research and development
+                in various areas of computer science and information technology.
+            </p>
+
+            <p>
+                This faculty profile system provides information about
+                faculty members including their academic qualifications,
+                teaching responsibilities and research interests.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div>
+            <h3>IIEST Shibpur</h3>
+            <p>Department of Computer Science & Technology</p>
+        </div>
+
+        <div>
+            <p>Faculty Information System</p>
+            <p>Developed using HTML, CSS & JavaScript</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 IIEST Shibpur — CST Faculty Profile
+    </div>
+
+</footer>
+
+<script src="script1.js"></script>
+
+</body>
+</html>
